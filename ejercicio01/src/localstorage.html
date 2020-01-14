@@ -16,9 +16,8 @@
       crossorigin="anonymous"
     />
 
-    <title>Ejercicios con JS</title>
+    <title>Ejercicio LocalStorage</title>
   </head>
-
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,58 +33,50 @@
         </ul>
       </div>
     </nav>
-    <h1>Ejercicios con JS (01)</h1>
+    <h1>Ejercicios con LocalStorage</h1>
 
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <form id="formulario" onsubmit="return false">
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                placeholder="Introduzca el Nombre"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="apellidos">Apellidos</label>
-              <input
-                type="text"
-                class="form-control"
-                id="apellidos"
-                placeholder="Introduzca los Apellidos"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="edad">Edad</label>
-              <input
-                type="number"
-                class="form-control"
-                id="edad"
-                placeholder="Introduzca la edad"
-                required
-              />
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        <form id="formulario">
+          <div class="form-group">
+            <label for="pelicula">Agrega tu pelicula</label>
+            <input
+              type="text"
+              class="form-control"
+              id="pelicula"
+              placeholder="Introduzca el Nombre"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+      <div class="row">
+        <h2>Liatdos de pelicula</h2>
+        <div id="peliculas">
+          <ul id="peliculas-list"></ul>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="datos">
-          <h3>Datos del usuario</h3>
-          <p id="p_nombre">Nombre : <span></span></p>
-
-          <p id="p_apellidos">Apellidos : <span></span></p>
-
-          <p id="p_edad">Edad : <span></span></p>
-        </div>
+      </div>
+      <div class="row">
+        <form id="formulariob">
+          <div class="form-group">
+            <label for="pelicula">Borrar pelicula</label>
+            <input
+              type="text"
+              class="form-control"
+              id="borrarpelicula"
+              placeholder="Introduzca el Nombre"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Borrar</button>
+        </form>
       </div>
     </div>
 
     <!-- Optional JavaScript -->
-    <script src="js/index.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/localstoraje.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
